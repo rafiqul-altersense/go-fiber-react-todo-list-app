@@ -1,0 +1,14 @@
+
+@LOCAL_HOST = http://localhost:3000
+
+
+### Create new todo
+POST {{LOCAL_HOST}}/todos
+Content-Type: application/json
+
+{
+    "title": "New Todo"
+}
+
+### Get all todos
+GET {{LOCAL_HOST}}/todos
