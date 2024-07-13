@@ -7,7 +7,7 @@ POST {{LOCAL_HOST}}/todos
 Content-Type: application/json
 
 {
-    "title": "New Todo"
+    "title": "Test todo"
 }
 
 ### Get all todos

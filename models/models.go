@@ -8,10 +8,10 @@ type User struct {
 }
 
 type Todo struct {
-	ID        string  `json:"id"`
+	ID        *string `json:"id" default:"1"` // string data type id auto generated
 	Title     string  `json:"title"`
-	Status    string  `json:"status" default:"active"`
-	CreatedAt string  `json:"created_at"`
-	UpdatedAt *string `json:"updated_at"`
+	Status    *string `json:"status" default:"active"`
+	CreatedAt *string `json:"created_at" default:"2021-09-01T00:00:00Z"`
+	UpdatedAt *string `json:"updated_at" default:"2021-09-01T00:00:00Z"`
 	DeletedAt *string `json:"deleted_at"` // soft delete, initially null
 }
